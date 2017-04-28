@@ -6,7 +6,8 @@ function noop() {}
 const animationFnPropType = PropTypes.oneOf([
   Animated.decay,
   Animated.spring,
-  Animated.timing
+  Animated.timing,
+  Animated.sequence
 ]);
 
 export default class Swipeable extends PureComponent {
