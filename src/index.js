@@ -3,12 +3,7 @@ import {Animated, Easing, PanResponder, StyleSheet, View} from 'react-native';
 
 function noop() {}
 
-const animationFnPropType = PropTypes.oneOf([
-  Animated.decay,
-  Animated.spring,
-  Animated.timing,
-  Animated.sequence
-]);
+const animationFnPropType = PropTypes.func;
 
 export default class Swipeable extends PureComponent {
 
